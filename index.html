@@ -1,107 +1,800 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="5SG7WPoFfY6YnbVgUBdAU_RA-zIXEjYLqYSCJBYs27s" />
+  <meta name="google-site-verification" content="5SG7WPoFfY6YnbVgUBdAU_RA-zIXEjYLqYSCJBYs27s" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Ravi Abbineni | Finance and Strategy Executive</title>
-
-  <meta name="description" content="Ravi Abbineni, also known as Ravitheja Abbineni, is a finance and strategy executive focused on capital allocation, corporate development, and enterprise leadership." />
-
-  <meta name="keywords" content="Ravi Abbineni, Ravitheja Abbineni, finance executive, strategy executive, capital allocation, corporate development" />
-
+  <title>Ravi Abbineni | Finance, Strategy, and Capital Allocation</title>
+  <meta name="description" content="Ravi Abbineni, also known as Ravitheja Abbineni, is a finance and strategy executive focused on capital allocation, corporate development, enterprise leadership, and durable value creation." />
+  <meta name="keywords" content="Ravi Abbineni, Ravitheja Abbineni, finance executive, strategy executive, capital allocation, corporate development, enterprise leadership" />
   <meta name="robots" content="index, follow" />
-
   <link rel="canonical" href="https://raviabbineni.com" />
 
+  <meta property="og:title" content="Ravi Abbineni | Finance, Strategy, and Capital Allocation" />
+  <meta property="og:description" content="Finance and strategy executive focused on capital allocation, enterprise leadership, and long-cycle value creation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://raviabbineni.com" />
+
   <style>
+    :root {
+      --bg: #0b1020;
+      --bg-soft: #111833;
+      --panel: rgba(255,255,255,0.06);
+      --panel-strong: rgba(255,255,255,0.1);
+      --border: rgba(255,255,255,0.12);
+      --text: #eef2ff;
+      --muted: #b7bfd8;
+      --faint: #90a0c2;
+      --accent: #8fb4ff;
+      --accent-2: #d6b3ff;
+      --shadow: 0 24px 60px rgba(0,0,0,0.28);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 0 24px;
-      line-height: 1.65;
-      color: #111;
-      background: #fff;
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(143,180,255,0.20), transparent 32%),
+        radial-gradient(circle at top right, rgba(214,179,255,0.16), transparent 24%),
+        linear-gradient(180deg, #0a0f1f 0%, #0c1326 42%, #0b1020 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(11, 16, 32, 0.72);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 72px;
+    }
+
+    .brand {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      padding: 10px 14px;
+      border-radius: 999px;
+      transition: 180ms ease;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+      background: rgba(255,255,255,0.07);
+    }
+
+    .hero {
+      padding: 82px 0 42px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.85fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-main,
+    .hero-side,
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-main {
+      padding: 42px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-main::after {
+      content: "";
+      position: absolute;
+      inset: auto -40px -60px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(143,180,255,0.25), transparent 68%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(255,255,255,0.04);
+      font-size: 0.9rem;
+      margin-bottom: 18px;
     }
 
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.25rem;
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      margin: 0 0 18px;
+    }
+
+    .headline-accent {
+      display: block;
+      color: var(--accent);
+    }
+
+    .hero-copy {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 60ch;
+      margin-bottom: 28px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .button,
+    .button-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
+
+    .button {
+      background: linear-gradient(135deg, var(--accent), #b6c9ff);
+      color: #09101f;
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .button:hover,
+    .button-secondary:hover {
+      transform: translateY(-1px);
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .stat {
+      padding: 16px;
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .stat-label {
+      color: var(--faint);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .stat-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .hero-side {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .side-card {
+      padding: 22px;
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .side-card h3,
+    .section-title {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .side-card p,
+    .section-copy,
+    .body-copy,
+    li {
+      color: var(--muted);
+    }
+
+    section {
+      padding: 18px 0 24px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section-kicker {
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 8px;
       font-weight: 700;
     }
 
-    .subhead {
-      color: #444;
-      margin-bottom: 2rem;
-      font-size: 1.05rem;
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
     }
 
-    h2 {
-      font-size: 1.15rem;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      padding: 26px;
+    }
+
+    .focus-list,
+    .timeline,
+    .insight-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .focus-list li,
+    .timeline li,
+    .insight-list li {
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .focus-list li:first-child,
+    .timeline li:first-child,
+    .insight-list li:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .focus-title,
+    .timeline-title {
+      color: var(--text);
       font-weight: 600;
+      margin-bottom: 5px;
     }
 
-    p {
-      margin: 0.9rem 0;
+    .quote {
+      font-size: clamp(1.3rem, 2vw, 1.7rem);
+      line-height: 1.35;
+      color: var(--text);
+      letter-spacing: -0.03em;
+      margin: 0;
+    }
+
+    .quote-attrib {
+      margin-top: 14px;
+      color: var(--faint);
+      font-size: 0.95rem;
+    }
+
+    .musings-shell {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+    }
+
+    .musing-composer textarea {
+      width: 100%;
+      min-height: 180px;
+      resize: vertical;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      padding: 16px;
+      font: inherit;
+      line-height: 1.6;
+      outline: none;
+    }
+
+    .musing-composer textarea:focus {
+      border-color: rgba(143,180,255,0.6);
+      box-shadow: 0 0 0 4px rgba(143,180,255,0.12);
+    }
+
+    .composer-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .tiny-note {
+      color: var(--faint);
+      font-size: 0.92rem;
+    }
+
+    .musing-feed {
+      max-height: 520px;
+      overflow: auto;
+      padding-right: 6px;
+      scroll-behavior: smooth;
+    }
+
+    .musing-feed::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .musing-feed::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.12);
+      border-radius: 999px;
+    }
+
+    .musing-item {
+      padding: 18px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .musing-item:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .musing-date {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .musing-text {
+      color: var(--text);
       font-size: 1rem;
     }
 
-    .links a {
-      display: inline-block;
-      margin-right: 18px;
-      margin-top: 10px;
-      color: #0a58ca;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    .note {
-      color: #555;
+    .footer {
+      padding: 26px 0 60px;
+      color: var(--faint);
       font-size: 0.95rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 20px;
+    }
+
+    .link-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .chip-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+      transition: 180ms ease;
+    }
+
+    .chip-link:hover {
+      color: var(--text);
+      background: rgba(255,255,255,0.08);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .grid-2,
+      .musings-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-meta {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding-top: 48px;
+      }
+
+      .hero-main,
+      .hero-side,
+      .panel {
+        padding: 22px;
+      }
+
+      .nav {
+        padding: 10px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
     }
   </style>
 </head>
-
 <body>
-  <main>
-    <h1>Ravi Abbineni</h1>
-    <p class="subhead">Finance and strategy executive</p>
-
-    <p>
-      Ravi Abbineni, also known as Ravitheja Abbineni, is a finance and strategy executive focused on capital allocation, corporate development, and enterprise leadership.
-    </p>
-
-    <p>
-      Capital allocation feels different right now. The cost of being wrong is higher, optionality is no longer free, and discipline is becoming a real differentiator. Much of my work centers on helping organizations make clearer, more durable decisions in that environment.
-    </p>
-
-    <p>
-      Over time, that has meant working at the intersection of finance, strategy, and operations—shaping how capital is deployed, how businesses scale, and how value compounds over longer cycles.
-    </p>
-
-    <div class="links">
-      <a href="https://www.linkedin.com/in/ravi-abbineni-a930064/" target="_blank" rel="noopener noreferrer">
-        LinkedIn Profile
-      </a>
+  <header class="topbar">
+    <div class="shell nav">
+      <a href="#top" class="brand">Ravi Abbineni</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#experience">Perspective</a>
+        <a href="#musings">Musings</a>
+        <a href="#connect">Connect</a>
+      </nav>
     </div>
+  </header>
 
-    <h2>Focus Areas</h2>
-    <p>
-      Capital allocation discipline, return quality, private market investing, and building durable operating businesses.
-    </p>
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-main">
+          <div class="eyebrow">Finance • Strategy • Capital Allocation</div>
+          <h1>
+            Ravi Abbineni
+            <span class="headline-accent">Building durable value across cycles.</span>
+          </h1>
+          <p class="hero-copy">
+            Ravi Abbineni, also known as Ravitheja Abbineni, is a finance and strategy executive working at the intersection of capital allocation, enterprise leadership, corporate development, and long-cycle value creation.
+          </p>
+          <div class="cta-row">
+            <a class="button" href="https://www.linkedin.com/in/ravi-abbineni-a930064/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button-secondary" href="#musings">Read Musings</a>
+          </div>
+          <div class="hero-meta">
+            <div class="stat">
+              <div class="stat-label">Orientation</div>
+              <div class="stat-value">Capital discipline under uncertainty</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Domains</div>
+              <div class="stat-value">Finance, strategy, operations</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Bias</div>
+              <div class="stat-value">Clarity, durability, compounding</div>
+            </div>
+          </div>
+        </div>
 
-    <h2>About</h2>
-    <p class="note">
-      This is the official professional site for Ravi Abbineni (Ravitheja Abbineni).
-    </p>
+        <aside class="hero-side">
+          <div class="side-card">
+            <h3>Current framing</h3>
+            <p>
+              The cost of being wrong is higher. Optionality is no longer free. Discipline is becoming a real differentiator.
+            </p>
+          </div>
+          <div class="side-card">
+            <h3>What this site is becoming</h3>
+            <p>
+              Not just a biography page, but a living space for perspective, operating principles, and evolving ideas.
+            </p>
+          </div>
+          <div class="side-card">
+            <h3>Name signal</h3>
+            <p>
+              This is the official professional site for Ravi Abbineni and Ravitheja Abbineni.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="shell grid-2">
+        <article class="panel">
+          <div class="section-kicker">About</div>
+          <h2 class="section-title">A more deliberate professional presence.</h2>
+          <p class="section-copy">
+            Over time, my work has centered on how capital gets deployed, how businesses scale, and how decision quality holds up over longer cycles. That means moving fluidly across finance, strategy, and operating reality rather than treating them as separate disciplines.
+          </p>
+          <p class="section-copy">
+            I am especially interested in the architecture beneath performance: incentives, pacing, portfolio logic, return quality, and the organizational choices that quietly determine whether value compounds or leaks away.
+          </p>
+        </article>
+
+        <article class="panel">
+          <div class="section-kicker">Operating view</div>
+          <blockquote class="quote">
+            Good capital allocation is not only about where money goes. It is about how clearly the institution sees, how honestly it prices risk, and how patiently it compounds.
+          </blockquote>
+          <div class="quote-attrib">— Ravi Abbineni</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Focus areas</div>
+            <h2 class="section-title">Themes that sit at the center of the work.</h2>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="panel">
+            <h3 class="section-title">Capital allocation</h3>
+            <ul class="focus-list">
+              <li>
+                <div class="focus-title">Return quality over headline growth</div>
+                <div>Separating activity from value creation and pushing toward durable economics.</div>
+              </li>
+              <li>
+                <div class="focus-title">Portfolio logic</div>
+                <div>Thinking in terms of resilience, optionality, concentration, and strategic coherence.</div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <h3 class="section-title">Enterprise strategy</h3>
+            <ul class="focus-list">
+              <li>
+                <div class="focus-title">Decision architecture</div>
+                <div>Improving the systems through which organizations evaluate risk, deploy resources, and adapt.</div>
+              </li>
+              <li>
+                <div class="focus-title">Long-cycle thinking</div>
+                <div>Building institutions that can perform through multiple environments rather than one window.</div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <h3 class="section-title">Value creation</h3>
+            <ul class="focus-list">
+              <li>
+                <div class="focus-title">Operating durability</div>
+                <div>Aligning strategy with execution, incentives, and realistic capacity.</div>
+              </li>
+              <li>
+                <div class="focus-title">Compounding businesses</div>
+                <div>Focusing on enterprises capable of sustained, disciplined reinvestment.</div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="shell grid-2">
+        <article class="panel">
+          <div class="section-kicker">Perspective</div>
+          <h2 class="section-title">How the lens has evolved.</h2>
+          <ul class="timeline">
+            <li>
+              <div class="timeline-title">Finance as strategic instrument</div>
+              <div>Not merely reporting the past, but shaping the range and quality of future decisions.</div>
+            </li>
+            <li>
+              <div class="timeline-title">Strategy under capital constraint</div>
+              <div>The best strategic ideas are still bounded by sequencing, liquidity, and institutional capability.</div>
+            </li>
+            <li>
+              <div class="timeline-title">Execution as value filter</div>
+              <div>Most attractive ideas fail not in conception, but in translation into operating reality.</div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <div class="section-kicker">Selected thoughts</div>
+          <h2 class="section-title">A few durable convictions.</h2>
+          <ul class="insight-list">
+            <li>Discipline matters more when the environment becomes noisier.</li>
+            <li>Optionality has a carrying cost, even when institutions pretend it does not.</li>
+            <li>Scale without decision quality often becomes fragility in disguise.</li>
+            <li>Compounding is as much behavioral as it is financial.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="musings">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Musings</div>
+            <h2 class="section-title">A scrollable stream for ideas in motion.</h2>
+            <p class="section-copy">This section is built so you can keep adding thoughts over time. For now it stores entries in the browser locally. Later, we can move it to a JSON-driven or Jekyll-based workflow on GitHub Pages.</p>
+          </div>
+        </div>
+
+        <div class="musings-shell">
+          <article class="panel musing-composer">
+            <h3 class="section-title">Add a thought</h3>
+            <p class="section-copy">Use this as a live scratchpad for short reflections, aphorisms, or sharper points of view.</p>
+            <textarea id="musingInput" placeholder="Example: In a higher-rate world, institutional discipline stops being a talking point and becomes a sorting mechanism."></textarea>
+            <div class="composer-actions">
+              <span class="tiny-note">Stored locally in your browser for now.</span>
+              <button class="button" id="saveMusingBtn" type="button">Save Musing</button>
+            </div>
+          </article>
+
+          <article class="panel">
+            <h3 class="section-title">Thought stream</h3>
+            <div class="musing-feed" id="musingFeed" aria-live="polite"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect">
+      <div class="shell">
+        <article class="panel">
+          <div class="section-kicker">Connect</div>
+          <h2 class="section-title">Professional presence, with room to expand.</h2>
+          <p class="section-copy">
+            Today, this site is a cleaner expression of professional identity. Over time, it can become a fuller archive of essays, investment thinking, strategic observations, and operating philosophy.
+          </p>
+          <div class="link-row">
+            <a class="chip-link" href="https://www.linkedin.com/in/ravi-abbineni-a930064/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            <a class="chip-link" href="#top">Back to top</a>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div>© <span id="year"></span> Ravi Abbineni</div>
+      <div>Official professional site for Ravi Abbineni / Ravitheja Abbineni</div>
+    </div>
+  </footer>
+
+  <script>
+    const defaultMusings = [
+      {
+        date: "March 2026",
+        text: "Capital allocation feels different right now. The cost of being wrong is higher, optionality is no longer free, and discipline is becoming a real differentiator."
+      },
+      {
+        date: "March 2026",
+        text: "In most institutions, the visible strategy gets attention. The invisible decision architecture determines the outcome."
+      },
+      {
+        date: "March 2026",
+        text: "Compounding is often constrained less by opportunity than by the inability to hold a coherent line through noise."
+      }
+    ];
+
+    const storageKey = "ravi_site_musings";
+    const feed = document.getElementById("musingFeed");
+    const input = document.getElementById("musingInput");
+    const saveBtn = document.getElementById("saveMusingBtn");
+    const yearEl = document.getElementById("year");
+
+    function readMusings() {
+      try {
+        const raw = localStorage.getItem(storageKey);
+        if (!raw) return defaultMusings;
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) && parsed.length ? parsed : defaultMusings;
+      } catch {
+        return defaultMusings;
+      }
+    }
+
+    function writeMusings(items) {
+      localStorage.setItem(storageKey, JSON.stringify(items));
+    }
+
+    function renderMusings() {
+      const musings = readMusings();
+      feed.innerHTML = musings.map(item => `
+        <article class="musing-item">
+          <div class="musing-date">${item.date}</div>
+          <div class="musing-text">${item.text}</div>
+        </article>
+      `).join("");
+    }
+
+    saveBtn.addEventListener("click", () => {
+      const text = input.value.trim();
+      if (!text) return;
+
+      const items = readMusings();
+      const now = new Date();
+      const date = now.toLocaleString("en-US", { month: "long", year: "numeric" });
+
+      items.unshift({ date, text });
+      writeMusings(items);
+      renderMusings();
+      input.value = "";
+      feed.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    yearEl.textContent = new Date().getFullYear();
+    renderMusings();
+  </script>
 </body>
 </html>
