@@ -302,33 +302,6 @@ h1 {
   transform: translateY(-1px);
 }
 
-.hero-meta {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.stat {
-  padding: 16px;
-  border-radius: var(--radius-md);
-  background: rgba(248, 243, 234, 0.04);
-  border: 1px solid rgba(248, 243, 234, 0.08);
-}
-
-.stat-label {
-  color: var(--faint);
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 6px;
-}
-
-.stat-value {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
 .hero-side {
   padding: 26px;
   display: flex;
@@ -596,10 +569,6 @@ section {
   .hero-monogram {
     width: 100%;
     min-height: auto;
-  }
-
-  .hero-meta {
-    grid-template-columns: 1fr;
   }
 }
 
