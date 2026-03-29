@@ -344,82 +344,20 @@
       font-size: 0.95rem;
     }
 
-    .musings-shell {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 18px;
-    }
-
-    .musing-composer textarea {
-      width: 100%;
-      min-height: 180px;
-      resize: vertical;
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.03);
-      color: var(--text);
-      padding: 16px;
-      font: inherit;
-      line-height: 1.6;
-      outline: none;
-    }
-
-    .musing-composer textarea:focus {
-      border-color: rgba(143,180,255,0.6);
-      box-shadow: 0 0 0 4px rgba(143,180,255,0.12);
-    }
-
-    .composer-actions {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      margin-top: 14px;
-    }
-
-    .tiny-note {
-      color: var(--faint);
-      font-size: 0.92rem;
-    }
-
-    .musing-feed {
-      max-height: 520px;
+    .scroll-panel {
+      max-height: 420px;
       overflow: auto;
       padding-right: 6px;
       scroll-behavior: smooth;
     }
 
-    .musing-feed::-webkit-scrollbar {
+    .scroll-panel::-webkit-scrollbar {
       width: 10px;
     }
 
-    .musing-feed::-webkit-scrollbar-thumb {
+    .scroll-panel::-webkit-scrollbar-thumb {
       background: rgba(255,255,255,0.12);
       border-radius: 999px;
-    }
-
-    .musing-item {
-      padding: 18px 0;
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .musing-item:first-child {
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .musing-date {
-      color: var(--accent);
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-      font-weight: 700;
-    }
-
-    .musing-text {
-      color: var(--text);
-      font-size: 1rem;
     }
 
     .footer {
@@ -463,8 +401,7 @@
     @media (max-width: 980px) {
       .hero-grid,
       .grid-3,
-      .grid-2,
-      .musings-shell {
+      .grid-2 {
         grid-template-columns: 1fr;
       }
 
@@ -505,7 +442,6 @@
         <a href="#about">About</a>
         <a href="#focus">Focus</a>
         <a href="#experience">Perspective</a>
-        <a href="#musings">Musings</a>
         <a href="#connect">Connect</a>
       </nav>
     </div>
@@ -525,7 +461,7 @@
           </p>
           <div class="cta-row">
             <a class="button" href="https://www.linkedin.com/in/ravi-abbineni-a930064/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="button-secondary" href="#musings">Read Musings</a>
+            <a class="button-secondary" href="#experience">View Perspective</a>
           </div>
           <div class="hero-meta">
             <div class="stat">
@@ -649,61 +585,60 @@
         <article class="panel">
           <div class="section-kicker">Perspective</div>
           <h2 class="section-title">How the lens has evolved.</h2>
-          <ul class="timeline">
-            <li>
-              <div class="timeline-title">Finance as strategic instrument</div>
-              <div>Not merely reporting the past, but shaping the range and quality of future decisions.</div>
-            </li>
-            <li>
-              <div class="timeline-title">Strategy under capital constraint</div>
-              <div>The best strategic ideas are still bounded by sequencing, liquidity, and institutional capability.</div>
-            </li>
-            <li>
-              <div class="timeline-title">Execution as value filter</div>
-              <div>Most attractive ideas fail not in conception, but in translation into operating reality.</div>
-            </li>
-          </ul>
+          <div class="scroll-panel">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-title">Finance as strategic instrument</div>
+                <div>Not merely reporting the past, but shaping the range and quality of future decisions.</div>
+              </li>
+              <li>
+                <div class="timeline-title">Strategy under capital constraint</div>
+                <div>The best strategic ideas are still bounded by sequencing, liquidity, and institutional capability.</div>
+              </li>
+              <li>
+                <div class="timeline-title">Execution as value filter</div>
+                <div>Most attractive ideas fail not in conception, but in translation into operating reality.</div>
+              </li>
+              <li>
+                <div class="timeline-title">Discipline in ambiguity</div>
+                <div>When visibility drops, process quality matters more. Institutions that can still distinguish signal from noise gain disproportionate advantage.</div>
+              </li>
+              <li>
+                <div class="timeline-title">Optionality has a price</div>
+                <div>Flexibility is valuable, but it is never free. Carrying too many open paths can become a hidden drag on focus, capital, and execution.</div>
+              </li>
+              <li>
+                <div class="timeline-title">Compounding requires coherence</div>
+                <div>Sustained value creation is less about bursts of activity and more about maintaining a coherent line through cycles, volatility, and changing incentives.</div>
+              </li>
+              <li>
+                <div class="timeline-title">Scale can conceal fragility</div>
+                <div>Large organizations often look resilient from the outside while quietly accumulating decision latency, complexity, and diluted accountability.</div>
+              </li>
+              <li>
+                <div class="timeline-title">Operating reality is the final judge</div>
+                <div>Ideas earn their credibility only when they survive contact with incentives, capacity, timing, and the actual behavior of the institution.</div>
+              </li>
+            </ul>
+          </div>
         </article>
 
         <article class="panel">
           <div class="section-kicker">Selected thoughts</div>
           <h2 class="section-title">A few durable convictions.</h2>
-          <ul class="insight-list">
-            <li>Discipline matters more when the environment becomes noisier.</li>
-            <li>Optionality has a carrying cost, even when institutions pretend it does not.</li>
-            <li>Scale without decision quality often becomes fragility in disguise.</li>
-            <li>Compounding is as much behavioral as it is financial.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="musings">
-      <div class="shell">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Musings</div>
-            <h2 class="section-title">A scrollable stream for ideas in motion.</h2>
-            <p class="section-copy">This section is built so you can keep adding thoughts over time. For now it stores entries in the browser locally. Later, we can move it to a JSON-driven or Jekyll-based workflow on GitHub Pages.</p>
+          <div class="scroll-panel">
+            <ul class="insight-list">
+              <li>Discipline matters more when the environment becomes noisier.</li>
+              <li>Optionality has a carrying cost, even when institutions pretend it does not.</li>
+              <li>Scale without decision quality often becomes fragility in disguise.</li>
+              <li>Compounding is as much behavioral as it is financial.</li>
+              <li>Return quality matters more than activity volume.</li>
+              <li>Good strategy without sequencing discipline often fails in execution.</li>
+              <li>Incentive design is one of the most underestimated drivers of enterprise outcomes.</li>
+              <li>Durable organizations are built as much through restraint as through ambition.</li>
+            </ul>
           </div>
-        </div>
-
-        <div class="musings-shell">
-          <article class="panel musing-composer">
-            <h3 class="section-title">Add a thought</h3>
-            <p class="section-copy">Use this as a live scratchpad for short reflections, aphorisms, or sharper points of view.</p>
-            <textarea id="musingInput" placeholder="Example: In a higher-rate world, institutional discipline stops being a talking point and becomes a sorting mechanism."></textarea>
-            <div class="composer-actions">
-              <span class="tiny-note">Stored locally in your browser for now.</span>
-              <button class="button" id="saveMusingBtn" type="button">Save Musing</button>
-            </div>
-          </article>
-
-          <article class="panel">
-            <h3 class="section-title">Thought stream</h3>
-            <div class="musing-feed" id="musingFeed" aria-live="polite"></div>
-          </article>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -713,7 +648,7 @@
           <div class="section-kicker">Connect</div>
           <h2 class="section-title">Professional presence, with room to expand.</h2>
           <p class="section-copy">
-            Today, this site is a cleaner expression of professional identity. Over time, it can become a fuller archive of essays, investment thinking, strategic observations, and operating philosophy.
+            This site is designed as a concise public-facing professional presence: clear, durable, and intentionally selective.
           </p>
           <div class="link-row">
             <a class="chip-link" href="https://www.linkedin.com/in/ravi-abbineni-a930064/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
@@ -732,69 +667,8 @@
   </footer>
 
   <script>
-    const defaultMusings = [
-      {
-        date: "March 2026",
-        text: "Capital allocation feels different right now. The cost of being wrong is higher, optionality is no longer free, and discipline is becoming a real differentiator."
-      },
-      {
-        date: "March 2026",
-        text: "In most institutions, the visible strategy gets attention. The invisible decision architecture determines the outcome."
-      },
-      {
-        date: "March 2026",
-        text: "Compounding is often constrained less by opportunity than by the inability to hold a coherent line through noise."
-      }
-    ];
-
-    const storageKey = "ravi_site_musings";
-    const feed = document.getElementById("musingFeed");
-    const input = document.getElementById("musingInput");
-    const saveBtn = document.getElementById("saveMusingBtn");
-    const yearEl = document.getElementById("year");
-
-    function readMusings() {
-      try {
-        const raw = localStorage.getItem(storageKey);
-        if (!raw) return defaultMusings;
-        const parsed = JSON.parse(raw);
-        return Array.isArray(parsed) && parsed.length ? parsed : defaultMusings;
-      } catch {
-        return defaultMusings;
-      }
-    }
-
-    function writeMusings(items) {
-      localStorage.setItem(storageKey, JSON.stringify(items));
-    }
-
-    function renderMusings() {
-      const musings = readMusings();
-      feed.innerHTML = musings.map(item => `
-        <article class="musing-item">
-          <div class="musing-date">${item.date}</div>
-          <div class="musing-text">${item.text}</div>
-        </article>
-      `).join("");
-    }
-
-    saveBtn.addEventListener("click", () => {
-      const text = input.value.trim();
-      if (!text) return;
-
-      const items = readMusings();
-      const now = new Date();
-      const date = now.toLocaleString("en-US", { month: "long", year: "numeric" });
-
-      items.unshift({ date, text });
-      writeMusings(items);
-      renderMusings();
-      input.value = "";
-      feed.scrollTo({ top: 0, behavior: "smooth" });
-    });
-
-    yearEl.textContent = new Date().getFullYear();
-    renderMusings();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
