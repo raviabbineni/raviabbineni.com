@@ -412,6 +412,7 @@ section {
 
 .focus-title,
 .timeline-title {
+  display: block;
   color: var(--text);
   font-weight: 600;
   margin-bottom: 5px;
