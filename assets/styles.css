@@ -312,6 +312,53 @@ h1 {
     rgba(248, 243, 234, 0.03);
 }
 
+.activity-panel {
+  max-height: 420px;
+  padding-right: 6px;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-list li + li {
+  margin-top: 14px;
+}
+
+.activity-link {
+  display: block;
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: rgba(248, 243, 234, 0.04);
+  border: 1px solid rgba(248, 243, 234, 0.08);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.activity-link:hover,
+.activity-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(239, 226, 190, 0.24);
+  background: rgba(248, 243, 234, 0.06);
+}
+
+.activity-type {
+  display: block;
+  color: var(--faint);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.activity-title {
+  display: block;
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
 .side-card {
   padding: 22px;
   border-radius: var(--radius-md);
