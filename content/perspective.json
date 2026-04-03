@@ -1,0 +1,64 @@
+{
+  "left_column_kicker": "Business perspectives",
+  "right_column_kicker": "Personal perspectives",
+  "business_entries": [
+    {
+      "title": "Finance is a strategic instrument",
+      "description": "Its role is not merely to report the past, but to shape the range and quality of future decisions."
+    },
+    {
+      "title": "Strategy is bounded by capital reality",
+      "description": "The best ideas still have to survive sequencing, liquidity, and institutional capability."
+    },
+    {
+      "title": "Execution is where value becomes real",
+      "description": "Ideas do not create results on their own; people do, by translating them into operating reality."
+    },
+    {
+      "title": "Discipline matters more in ambiguity",
+      "description": "When visibility drops and the environment gets noisier, advantage belongs to people and institutions that can still distinguish signal from noise."
+    },
+    {
+      "title": "Scale without decision quality becomes fragility",
+      "description": "Growth creates strength only when judgment, incentives, and operating discipline keep pace."
+    },
+    {
+      "title": "Compounding is behavioral as much as financial",
+      "description": "Long-term value creation depends as much on consistency, restraint, and decision quality as it does on capital itself."
+    },
+    {
+      "title": "Incentives shape outcomes",
+      "description": "Institutions ultimately behave the way people are rewarded to behave."
+    }
+  ],
+  "personal_entries": [
+    {
+      "title": "Connection requires consciousness",
+      "description": "Connection reaches its highest form when it is chosen consciously, not left to instinct alone."
+    },
+    {
+      "title": "Truth liberates, but it also burns",
+      "description": "Real truth expands freedom, but often only after it strips away illusion."
+    },
+    {
+      "title": "Union needs more than attraction",
+      "description": "Lasting partnership begins in connection, grows through understanding, and endures through shared discipline."
+    },
+    {
+      "title": "The body is an instrument of awareness",
+      "description": "Posture, breath, and practice can turn the body from a vessel of reaction into a pathway for awareness."
+    },
+    {
+      "title": "Understanding begins with learning the language",
+      "description": "We only come to know deeply what we learn to meaningfully communicate with."
+    },
+    {
+      "title": "Alignment across mind, body, and spirit matters",
+      "description": "When one dimension weakens, it creates an opening. Growth begins by recognizing where alignment has been lost."
+    },
+    {
+      "title": "Purpose is measured by contribution",
+      "description": "A meaningful life is shaped by what you bring in service of something larger than yourself."
+    }
+  ]
+}

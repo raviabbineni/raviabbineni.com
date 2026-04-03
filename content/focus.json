@@ -1,0 +1,45 @@
+{
+  "section_kicker": "Focus Areas",
+  "section_heading": "Themes that sit at the center of the work.",
+  "cards": [
+    {
+      "title": "Capital Allocation and Strategy",
+      "items": [
+        {
+          "title": "Capital deployment with strategic intent",
+          "description": "I focus on how capital is sequenced, where it compounds, and whether it expands the quality of future choices rather than simply funding activity."
+        },
+        {
+          "title": "Return quality and institutional coherence",
+          "description": "The work is not only about growth or transaction volume. It is about durable economics, disciplined priorities, and decisions that remain coherent across cycles."
+        }
+      ]
+    },
+    {
+      "title": "Operational Excellence",
+      "items": [
+        {
+          "title": "Execution discipline",
+          "description": "I care about operating cadence, accountability, and the ability to translate strategic intent into repeatable execution without losing clarity along the way."
+        },
+        {
+          "title": "Decision quality under pressure",
+          "description": "Strong operators distinguish signal from noise, align incentives with outcomes, and keep standards high when ambiguity would otherwise lower them."
+        }
+      ]
+    },
+    {
+      "title": "AI-Native High-Performing Teams",
+      "items": [
+        {
+          "title": "Human judgment with AI leverage",
+          "description": "I am interested in operating models where AI increases speed, coverage, and analytical range while human judgment remains responsible for direction and quality."
+        },
+        {
+          "title": "High-agency teams with decision velocity",
+          "description": "The advantage is not in adopting tools superficially. It comes from building teams that use AI fluently, learn quickly, and convert insight into action with discipline."
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,6 @@
   --bg-soft: #1b1a15;
   --bg-deep: #0d0c09;
   --panel: rgba(248, 243, 234, 0.05);
-  --panel-strong: rgba(248, 243, 234, 0.1);
   --border: rgba(248, 243, 234, 0.12);
   --text: #f5f0e6;
   --muted: #d2c7b8;
@@ -13,7 +12,6 @@
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
   --radius-lg: 28px;
   --radius-md: 18px;
-  --radius-sm: 12px;
   --max: 1160px;
 }
 
@@ -58,6 +56,10 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 .shell {
@@ -142,6 +144,10 @@ img {
   align-items: stretch;
 }
 
+.hero-grid--single {
+  grid-template-columns: 1fr;
+}
+
 .hero-main,
 .hero-side,
 .panel {
@@ -215,11 +221,6 @@ h1 {
   max-width: 10ch;
 }
 
-.headline-accent {
-  display: block;
-  color: var(--accent);
-}
-
 .hero-monogram {
   width: 124px;
   min-height: 148px;
@@ -232,13 +233,6 @@ h1 {
   overflow: hidden;
   display: grid;
   place-items: center;
-}
-
-.hero-monogram-placeholder {
-  color: var(--faint);
-  font-size: 0.82rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
 .hero-portrait {
@@ -298,7 +292,9 @@ h1 {
 .button-secondary:hover,
 .button-secondary:focus-visible,
 .chip-link:hover,
-.chip-link:focus-visible {
+.chip-link:focus-visible,
+.activity-link:hover,
+.activity-link:focus-visible {
   transform: translateY(-1px);
 }
 
@@ -338,7 +334,6 @@ h1 {
 
 .activity-link:hover,
 .activity-link:focus-visible {
-  transform: translateY(-1px);
   border-color: rgba(239, 226, 190, 0.24);
   background: rgba(248, 243, 234, 0.06);
 }
@@ -359,21 +354,12 @@ h1 {
   line-height: 1.4;
 }
 
-.side-card {
-  padding: 22px;
-  border-radius: var(--radius-md);
-  background: rgba(248, 243, 234, 0.04);
-  border: 1px solid rgba(248, 243, 234, 0.08);
-}
-
-.side-card h3,
 .section-title {
   margin: 0 0 10px;
   font-size: 1.1rem;
   letter-spacing: -0.02em;
 }
 
-.side-card p,
 .section-copy,
 .body-copy,
 li {
@@ -418,21 +404,6 @@ section {
   padding: 26px;
   position: relative;
   overflow: hidden;
-}
-
-.panel-highlight {
-  background:
-    linear-gradient(180deg, rgba(248, 243, 234, 0.06), rgba(248, 243, 234, 0.03)),
-    rgba(248, 243, 234, 0.03);
-}
-
-.panel-highlight::after {
-  content: "";
-  position: absolute;
-  inset: 0 auto auto 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(239, 226, 190, 0.55), transparent 70%);
 }
 
 .focus-list,
@@ -545,7 +516,8 @@ section {
   .reveal.is-visible,
   .button,
   .button-secondary,
-  .chip-link {
+  .chip-link,
+  .activity-link {
     opacity: 1;
     transform: none;
     transition: none;
@@ -554,6 +526,7 @@ section {
 
 @media (max-width: 980px) {
   .hero-grid,
+  .hero-grid--single,
   .grid-3,
   .grid-2 {
     grid-template-columns: 1fr;
