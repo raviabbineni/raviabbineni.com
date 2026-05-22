@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title>Capital Allocation</title>
+  <desc>Abstract editorial thumbnail with directional paths and allocation nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#282319"/>
+      <stop offset="100%" stop-color="#14110c"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0d594"/>
+      <stop offset="100%" stop-color="#a88a54"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="28" fill="url(#bg)"/>
+  <circle cx="64" cy="68" r="18" fill="#f0d594"/>
+  <circle cx="146" cy="92" r="14" fill="#d5b16e"/>
+  <circle cx="178" cy="156" r="22" fill="#8e7750"/>
+  <circle cx="88" cy="172" r="16" fill="#c6a463"/>
+  <path d="M82 72c18 0 30 4 48 14s25 22 38 52" fill="none" stroke="url(#flow)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M82 72c8 28 8 55-2 88" fill="none" stroke="#6a593f" stroke-width="8" stroke-linecap="round"/>
+  <path d="M98 170c18-3 39-5 58-8" fill="none" stroke="#f1dfb1" stroke-width="8" stroke-linecap="round"/>
+  <rect x="28" y="190" width="110" height="8" rx="4" fill="#746247" opacity="0.72"/>
+  <rect x="28" y="206" width="72" height="8" rx="4" fill="#5f513d" opacity="0.68"/>
+</svg>
