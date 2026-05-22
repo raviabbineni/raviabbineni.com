@@ -198,7 +198,9 @@ function validateActivity(data) {
       isObject(item) &&
       isNonEmptyString(item.type) &&
       isNonEmptyString(item.title) &&
-      isNonEmptyString(item.url)
+      isNonEmptyString(item.url) &&
+      (item.thumbnail === undefined || isNonEmptyString(item.thumbnail)) &&
+      (item.thumbnail_alt === undefined || isNonEmptyString(item.thumbnail_alt))
   );
 }
 
@@ -401,6 +403,7 @@ function renderActivity(activity) {
   activity.items.forEach((item) => {
     const listItem = document.createElement("li");
     const link = document.createElement("a");
+    const copy = document.createElement("div");
     const type = document.createElement("span");
     const title = document.createElement("span");
 
@@ -409,13 +412,28 @@ function renderActivity(activity) {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
+    if (isNonEmptyString(item.thumbnail)) {
+      const thumbWrap = document.createElement("span");
+      const thumbImage = document.createElement("img");
+
+      thumbWrap.className = "activity-thumb";
+      thumbImage.className = "activity-thumb-image";
+      thumbImage.src = item.thumbnail;
+      thumbImage.alt = isNonEmptyString(item.thumbnail_alt) ? item.thumbnail_alt : item.title;
+      thumbWrap.append(thumbImage);
+      link.append(thumbWrap);
+    }
+
+    copy.className = "activity-copy";
+
     type.className = "activity-type";
     type.textContent = item.type;
 
     title.className = "activity-title";
     title.textContent = item.title;
 
-    link.append(type, title);
+    copy.append(type, title);
+    link.append(copy);
     listItem.append(link);
     listNode.append(listItem);
   });
