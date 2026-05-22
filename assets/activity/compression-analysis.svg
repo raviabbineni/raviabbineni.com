@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title>Compression Analysis</title>
+  <desc>Abstract editorial thumbnail with narrowing channels and a decision marker.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b271f"/>
+      <stop offset="100%" stop-color="#15120d"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8e7750"/>
+      <stop offset="100%" stop-color="#e0c483"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="28" fill="url(#bg)"/>
+  <circle cx="182" cy="58" r="52" fill="#3b3225" opacity="0.42"/>
+  <path d="M28 68h112c20 0 36 16 36 36s-16 36-36 36H28" fill="none" stroke="#5d5038" stroke-width="16" stroke-linecap="round"/>
+  <path d="M28 112h88c15 0 28 12 28 28s-13 28-28 28H28" fill="none" stroke="url(#beam)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M150 120l34 22-34 22z" fill="#f1dfb1"/>
+  <circle cx="182" cy="142" r="8" fill="#f5f0e6"/>
+  <rect x="30" y="178" width="92" height="8" rx="4" fill="#746247" opacity="0.8"/>
+  <rect x="30" y="194" width="56" height="8" rx="4" fill="#5f513d" opacity="0.72"/>
+</svg>
