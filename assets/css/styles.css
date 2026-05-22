@@ -324,7 +324,10 @@ h1 {
 }
 
 .activity-link {
-  display: block;
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
   padding: 18px;
   border-radius: var(--radius-md);
   background: rgba(248, 243, 234, 0.04);
@@ -336,6 +339,28 @@ h1 {
 .activity-link:focus-visible {
   border-color: rgba(239, 226, 190, 0.24);
   background: rgba(248, 243, 234, 0.06);
+}
+
+.activity-thumb {
+  width: 88px;
+  height: 88px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(248, 243, 234, 0.1);
+  background:
+    linear-gradient(180deg, rgba(248, 243, 234, 0.08), rgba(248, 243, 234, 0.03)),
+    rgba(248, 243, 234, 0.03);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.activity-thumb-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activity-copy {
+  min-width: 0;
 }
 
 .activity-type {
@@ -352,6 +377,7 @@ h1 {
   color: var(--text);
   font-weight: 600;
   line-height: 1.4;
+  text-wrap: balance;
 }
 
 .section-title {
@@ -562,5 +588,16 @@ section {
   .section-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .activity-link {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .activity-thumb {
+    width: 72px;
+    height: 72px;
   }
 }
